@@ -26,7 +26,8 @@
 </body>
 </html>
 
-<!DOCTYPE html>
+<! –– left text box ––>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,3 +90,4 @@
     </div>
 </body>
 </html>
+

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,14 +9,16 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             height: 100vh;
-            background-color: #1FB53D;
+            background-color: #1FB53D; 
         }
 
         h1 {
             color: black;
+            margin-top: 20px; 
         }
     </style>
 </head>

@@ -33,10 +33,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ismo404 - Minecraft Developer</title>
-	<!-- font peepo regular -->
-    <link href="https://db.onlinewebfonts.com/c/b319832aeb7144538fd98da7e7246c04?family=Peepo+Regular" rel="stylesheet">
-	font-family: "Peepo Regular";
-	<!-- imported -->
 	
     <style>
         body {

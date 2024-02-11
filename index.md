@@ -33,13 +33,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ismo404 - Minecraft Developer</title>
-	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
-            font-family: "Peepo Regular";
+            font-family: 'Roboto', sans-serif;
         }
 
         .container {
@@ -56,7 +56,7 @@
             background-color: #12682D;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
         }
 
@@ -66,7 +66,7 @@
         }
 
         p {
-            text-align: center;
+            text-align: left;
             line-height: 1.4;
         }
 
@@ -90,4 +90,3 @@
     </div>
 </body>
 </html>
-

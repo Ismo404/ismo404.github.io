@@ -39,7 +39,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Peepo Regular";
         }
 
         .container {

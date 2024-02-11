@@ -35,7 +35,9 @@
     <title>Ismo404 - Minecraft Developer</title>
 	<!-- font peepo regular -->
     <link href="https://db.onlinewebfonts.com/c/b319832aeb7144538fd98da7e7246c04?family=Peepo+Regular" rel="stylesheet">
-    @import url(https://db.onlinewebfonts.com/c/b319832aeb7144538fd98da7e7246c04?family=Peepo+Regular);
+	font-family: "Peepo Regular";
+	<!-- imported -->
+	
     <style>
         body {
             margin: 0;

@@ -26,14 +26,16 @@
 </body>
 </html>
 
-<! –– left text box ––>
+<!-- left text box -->
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ismo404 - Minecraft Developer</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+	<!-- font peepo regular -->
+    <link href="https://db.onlinewebfonts.com/c/b319832aeb7144538fd98da7e7246c04?family=Peepo+Regular" rel="stylesheet">
+    @import url(https://db.onlinewebfonts.com/c/b319832aeb7144538fd98da7e7246c04?family=Peepo+Regular);
     <style>
         body {
             margin: 0;

@@ -36,7 +36,7 @@
     margin: 0; /* Remove margins to allow the box to fill the height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    width: 300px; /* Fixed width for the textbox */
+    width: 350px; /* Fixed width for the textbox */
     height: 100vh; /* Make the textbox fill the height of the viewport */
     box-sizing: border-box; /* Ensures padding is included in the height */
   }
@@ -54,7 +54,4 @@
             <p class="emojis">
                 ☕ Java | 🛠️ Spigot | 🎨 Creative
             </p>
-</div>
-</body>
-</html>
 

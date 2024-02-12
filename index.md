@@ -52,7 +52,8 @@
                 Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
             </p>
             <p class="emojis">
-                ☕ Java | 🛠️ Spigot | 🎨 Creative</strong>
+                ☕ Java | 🛠️ Spigot | 🎨 Creative
+            </p>
 </div>
 </body>
 </html>

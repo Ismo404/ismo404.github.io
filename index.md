@@ -25,6 +25,11 @@
     font-family: 'Press Start 2P', cursive;
   }
   .textbox {
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
     font-family: "VT323", monospace;
     background-color: #12682D;
     padding: 20px;
@@ -42,12 +47,12 @@
   <h1 class="title">Ismo404</h1>
 </div>
 <div class="textbox">
-  <span class="emoji">🚀</span>
-  <strong>Professional Minecraft Developer</strong>
-  <p>Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.</p>
-  <p><span class="emoji">🎮</span> I create awesome plugins to enhance the Minecraft experience.</p>
-  <p><span class="emoji">💡</span> Let's turn ideas into reality!</p>
-  <p><span class="emoji">🖥️</span> Java | <span class="emoji">🛠️</span> Spigot | <span class="emoji">✨</span> Fun and Functional</p>
+  <strong><h1>🚀 Professional Minecraft Developer</h1>
+            <p>
+                Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
+            </p>
+            <p class="emojis">
+                ☕ Java | 🛠️ Spigot | 🎨 Creative</strong>
 </div>
 </body>
 </html>

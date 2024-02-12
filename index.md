@@ -25,6 +25,7 @@
     font-family: 'Press Start 2P', cursive;
   }
   .textbox {
+    font-family: "VT323", monospace;
     background-color: #12682D;
     padding: 20px;
     margin: 0; /* Remove margins to allow the box to fill the height */
@@ -50,3 +51,4 @@
 </div>
 </body>
 </html>
+

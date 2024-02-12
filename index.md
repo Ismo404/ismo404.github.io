@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ismo404 - Minecraft Developer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Google font inclusion -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
@@ -15,20 +15,24 @@
   .title-container {
     text-align: center;
     padding-top: 20px;
+    color: black;
   }
   .title {
     margin: 0;
     font-size: 2.5em;
-    color: black;
-    font-family: 'Press Start 2P', cursive; /* Custom font for the title */
+    font-family: 'Press Start 2P', cursive;
   }
   .textbox {
     background-color: #12682D;
     padding: 20px;
-    margin-left: 20px; /* Align to the left with margin */
+    margin-top: 20px; /* Add space above the textbox */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    border-radius: 0; /* Remove rounded corners */
+    width: 300px; /* Set a fixed width */
+    /* If you want the width to be more flexible, you could use:
+       width: auto;
+       max-width: 300px;
+    */
   }
 </style>
 </head>

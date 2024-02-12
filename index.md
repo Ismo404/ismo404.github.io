@@ -25,18 +25,13 @@
     font-family: 'Press Start 2P', cursive;
   }
   .textbox {
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    
     font-family: "VT323", monospace;
     background-color: #12682D;
     padding: 20px;
     margin: 0; /* Remove margins to allow the box to fill the height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    width: 350px; /* Fixed width for the textbox */
+    width: 300px; /* Fixed width for the textbox */
     height: 100vh; /* Make the textbox fill the height of the viewport */
     box-sizing: border-box; /* Ensures padding is included in the height */
   }
@@ -47,7 +42,12 @@
   <h1 class="title">Ismo404</h1>
 </div>
 <div class="textbox">
-  <strong><h1>🚀 Professional Minecraft Developer</h1>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <h1>🚀 Professional Minecraft Developer</h1>
             <p>
                 Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
             </p>

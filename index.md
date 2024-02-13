@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
   html, body {
-    height: 100%; /* Make sure the body takes up the full viewport height */
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #1FB53D;
@@ -14,10 +14,10 @@
   }
   .title-container {
     text-align: center;
-    position: absolute; /* Makes the title absolute relative to the body */
-    width: 100%; /* Ensures title-container takes full width available */
-    top: 20px; /* Adds a little space on top */
-    z-index: 10; /* Ensures title-container stacks on top of .textbox */
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    z-index: 10;
   }
   .title {
     font-size: 2.5em;
@@ -28,12 +28,20 @@
     font-family: "VT323", monospace;
     background-color: #12682D;
     padding: 20px;
-    margin: 0; /* Remove margins to allow the box to fill the height */
+    margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    width: 300px; /* Fixed width for the textbox */
-    height: 100vh; /* Make the textbox fill the height of the viewport */
-    box-sizing: border-box; /* Ensures padding is included in the height */
+    width: 300px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .textbox p {
+    font-size: 20px;
+  }
+
+  .textbox .emojis {
+    font-size: 20px;
   }
 </style>
 </head>
@@ -42,19 +50,17 @@
   <h1 class="title">Ismo404</h1>
 </div>
 <div class="textbox">
-  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   
-  <h1>🚀 Professional Minecraft Developer</h1>
-            <p>
-			p {
-  font-size: 20px;
-}
-                Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
-            </p>
-            <p class="emojis">
-                ☕ Java | 🛠️ Spigot | 🎨 Creative
-            </p>
-
+    <h1>🚀 Professional Minecraft Developer</h1>
+    <p>
+        Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
+    </p>
+    <p class="emojis">
+        ☕ Java | 🛠️ Spigot | 🎨 Creative
+    </p>
+</div>
+</body>
+</html>

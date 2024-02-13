@@ -46,10 +46,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-font-size: 20px;
   
   <h1>🚀 Professional Minecraft Developer</h1>
             <p>
+			p {
+  font-size: 20px;
+}
                 Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer. 🎮 I create awesome plugins to enhance the Minecraft experience. 💡 Let's turn ideas into reality! ✨
             </p>
             <p class="emojis">

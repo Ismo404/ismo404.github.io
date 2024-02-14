@@ -50,6 +50,7 @@
             color: white;
             width: 350px;
             box-sizing: border-box;
+            z-index: 1; /* Lower z-index than the button */
         }
 
         .textbox p {
@@ -66,15 +67,16 @@
             font-weight: bold;
             text-align: center;
             text-decoration: none;
-            background-color: #12682D; /* Dark green color */
+            background-color: #2ecc71; /* Dark green color */
             color: #fff;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            z-index: 2; /* Higher z-index than the textbox */
         }
 
         .button:hover {
-            background-color: #0a401d; /* Darker green on hover */
+            background-color: #27ae60; /* Darker green on hover */
         }
     </style>
 </head>

@@ -31,7 +31,7 @@
     margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    width: 300px;
+    width: 350px;
     height: 100vh;
     box-sizing: border-box;
   }

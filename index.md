@@ -15,11 +15,13 @@
         }
 
         .container {
-            position: relative;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: 100vh;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .title {
@@ -36,7 +38,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color: white;
             width: 350px;
-            margin-top: 20px;
         }
 
         .textbox p {
@@ -58,7 +59,6 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
         }
 
         .button:hover {

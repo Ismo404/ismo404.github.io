@@ -67,7 +67,7 @@
 </body>
 </html>
 
-/*button*/
+ <!-- button -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,7 +89,7 @@
             font-weight: bold;
             text-align: center;
             text-decoration: none;
-            background-color: #3498db;
+            background-color: #2ecc71; /* Dark green color */
             color: #fff;
             border-radius: 5px;
             cursor: pointer;
@@ -97,7 +97,7 @@
         }
 
         .button:hover {
-            background-color: #2980b9;
+            background-color: #27ae60; /* Darker green on hover */
         }
     </style>
 </head>

@@ -66,7 +66,7 @@
             font-weight: bold;
             text-align: center;
             text-decoration: none;
-            background-color: #2ecc71; /* Dark green color */
+            background-color: #12682D; /* Dark green color */
             color: #fff;
             border-radius: 5px;
             cursor: pointer;
@@ -74,7 +74,7 @@
         }
 
         .button:hover {
-            background-color: #27ae60; /* Darker green on hover */
+            background-color: #0a401d; /* Darker green on hover */
         }
     </style>
 </head>

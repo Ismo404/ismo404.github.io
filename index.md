@@ -14,11 +14,15 @@
             font-family: Arial, sans-serif;
         }
 
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         .title-container {
             text-align: center;
-            position: absolute;
-            width: 100%;
-            top: 20px;
             z-index: 10;
         }
 
@@ -32,15 +36,10 @@
             font-family: "VT323", monospace;
             background-color: #12682D;
             padding: 20px;
-            margin: 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color: white;
             width: 350px;
-            height: 100vh;
             box-sizing: border-box;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         .textbox p {
@@ -49,12 +48,6 @@
 
         .textbox .emojis {
             font-size: 20px;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
         }
 
         .button {
@@ -77,25 +70,25 @@
 </head>
 
 <body>
-    <div class="title-container">
-        <h1 class="title">Ismo404</h1>
-    </div>
-    <div class="textbox">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title">Ismo404</h1>
+        </div>
+        <div class="textbox">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-        <h1>🚀 Professional Minecraft Developer</h1>
-        <p>
-            Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
-            <br>🎮 I create awesome plugins to enhance the Minecraft experience.
-            <br>💡 Let's turn ideas into reality! ✨
-        </p>
-        <p class="emojis">
-            ☕ Java | 🛠️ Spigot | 🎨 Creative
-        </p>
-    </div>
-    <div class="button-container">
+            <h1>🚀 Professional Minecraft Developer</h1>
+            <p>
+                Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
+                <br>🎮 I create awesome plugins to enhance the Minecraft experience.
+                <br>💡 Let's turn ideas into reality! ✨
+            </p>
+            <p class="emojis">
+                ☕ Java | 🛠️ Spigot | 🎨 Creative
+            </p>
+        </div>
         <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
     </div>
 </body>

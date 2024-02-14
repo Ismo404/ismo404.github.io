@@ -18,8 +18,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
             justify-content: space-between;
+            height: 100vh;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -31,6 +31,12 @@
             margin-top: 20px;
         }
 
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
         .textbox {
             font-family: "VT323", monospace;
             background-color: #12682D;
@@ -38,6 +44,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color: white;
             width: 350px;
+            box-sizing: border-box;
         }
 
         .textbox p {
@@ -70,22 +77,24 @@
 <body>
     <div class="container">
         <h1 class="title">Ismo404</h1>
-        <div class="textbox">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <div class="content">
+            <div class="textbox">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-            <h1>🚀 Professional Minecraft Developer</h1>
-            <p>
-                Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
-                <br>🎮 I create awesome plugins to enhance the Minecraft experience.
-                <br>💡 Let's turn ideas into reality! ✨
-            </p>
-            <p class="emojis">
-                ☕ Java | 🛠️ Spigot | 🎨 Creative
-            </p>
+                <h1>🚀 Professional Minecraft Developer</h1>
+                <p>
+                    Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
+                    <br>🎮 I create awesome plugins to enhance the Minecraft experience.
+                    <br>💡 Let's turn ideas into reality! ✨
+                </p>
+                <p class="emojis">
+                    ☕ Java | 🛠️ Spigot | 🎨 Creative
+                </p>
+            </div>
+            <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
         </div>
-        <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
     </div>
 </body>
 

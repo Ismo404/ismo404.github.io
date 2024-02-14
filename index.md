@@ -72,7 +72,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Button</title>
+    <title>GitHub</title>
     <style>
         body {
             display: flex;
@@ -102,6 +102,6 @@
     </style>
 </head>
 <body>
-    <a href="https://github.com/Ismo404" class="button">Visit GitHub</a>
+    <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
 </body>
 </html>

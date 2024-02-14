@@ -19,27 +19,14 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-        }
-
-        .title-container {
-            text-align: center;
-            z-index: 10;
-            position: absolute;
-            width: 100%;
-            top: 20px;
+            align-items: center;
         }
 
         .title {
             font-size: 2.5em;
             color: black;
             font-family: 'Press Start 2P', cursive;
-        }
-
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
+            margin-top: 20px;
         }
 
         .textbox {
@@ -49,8 +36,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color: white;
             width: 350px;
-            box-sizing: border-box;
-            z-index: 1; /* Lower z-index than the button */
+            margin-top: 20px;
         }
 
         .textbox p {
@@ -72,7 +58,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            z-index: 2; /* Higher z-index than the textbox */
+            margin-top: 20px;
         }
 
         .button:hover {
@@ -83,27 +69,23 @@
 
 <body>
     <div class="container">
-        <div class="title-container">
-            <h1 class="title">Ismo404</h1>
-        </div>
-        <div class="content">
-            <div class="textbox">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <h1 class="title">Ismo404</h1>
+        <div class="textbox">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-                <h1>🚀 Professional Minecraft Developer</h1>
-                <p>
-                    Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
-                    <br>🎮 I create awesome plugins to enhance the Minecraft experience.
-                    <br>💡 Let's turn ideas into reality! ✨
-                </p>
-                <p class="emojis">
-                    ☕ Java | 🛠️ Spigot | 🎨 Creative
-                </p>
-            </div>
-            <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
+            <h1>🚀 Professional Minecraft Developer</h1>
+            <p>
+                Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
+                <br>🎮 I create awesome plugins to enhance the Minecraft experience.
+                <br>💡 Let's turn ideas into reality! ✨
+            </p>
+            <p class="emojis">
+                ☕ Java | 🛠️ Spigot | 🎨 Creative
+            </p>
         </div>
+        <a href="https://github.com/Ismo404" class="button" target="_blank">GitHub</a>
     </div>
 </body>
 

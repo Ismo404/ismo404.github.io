@@ -43,24 +43,6 @@
   .textbox .emojis {
     font-size: 20px;
   }
-
-  /* GitHub button styling */
-  .github-link {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px; /* Adjust padding for button size */
-    background-color: #2ecc71; /* Green color */
-    color: white;
-    text-align: center;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .github-link:hover {
-    background-color: #27ae60; /* Darker green on hover */
-  }
 </style>
 </head>
 <body>
@@ -82,7 +64,5 @@
         ☕ Java | 🛠️ Spigot | 🎨 Creative
     </p>
 </div>
-<!-- GitHub link -->
-<div class="github-link" onclick="window.open('https://github.com/Ismo404', '_blank')">GitHub</div>
 </body>
 </html>

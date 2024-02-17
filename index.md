@@ -34,7 +34,6 @@
     width: 350px;
     height: 100vh;
     box-sizing: border-box;
-    border-radius: 15px; /* Adding border-radius for rounded corners */
   }
 
   .textbox p {
@@ -54,6 +53,14 @@
   .emojis a:hover,
   .emojis a:active {
     color: #1FB53D;
+  }
+
+  /* Styling for rounded rectangle */
+  .rounded-rectangle {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
   }
 </style>
 </head>

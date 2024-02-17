@@ -34,6 +34,7 @@
     width: 350px;
     height: 100vh;
     box-sizing: border-box;
+    border-radius: 15px; /* Adding border-radius for rounded corners */
   }
 
   .textbox p {
@@ -71,9 +72,13 @@
 		<br>🎮 I create awesome plugins to enhance the Minecraft experience.
 		<br>💡 Let's turn ideas into reality! ✨
     </p>
-    <p class="emojis">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ismo404notfound@gmail.com" target="_blank">📧 Gmail</a> | <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
-    </p>
+    <div class="emojis">
+        <div class="rounded-rectangle">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ismo404notfound@gmail.com" target="_blank">📧 Gmail</a> | 
+            <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | 
+            <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
+        </div>
+    </div>
 </div>
 </body>
 </html>

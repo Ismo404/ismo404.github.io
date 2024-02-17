@@ -61,7 +61,7 @@
 		<br>💡 Let's turn ideas into reality! ✨
     </p>
     <p class="emojis">
-        ☕ Java | 🛠️ Spigot | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
+        ☕ Java |<a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank"> 🛠️ Spigot | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
     </p>
 </div>
 </body>

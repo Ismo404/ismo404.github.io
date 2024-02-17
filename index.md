@@ -43,6 +43,17 @@
   .textbox .emojis {
     font-size: 20px;
   }
+
+  /* Styling for links */
+  .emojis a {
+    color: #1FB53D;
+    text-decoration: none;
+  }
+
+  .emojis a:hover,
+  .emojis a:active {
+    color: #1FB53D;
+  }
 </style>
 </head>
 <body>

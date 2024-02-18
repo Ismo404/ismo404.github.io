@@ -57,19 +57,12 @@
   }
 
   /* Styling for rounded rectangle */
-  .rounded-rectangle {
-    background-color: black;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 6px;
-  }
-
   #customMenu {
     display: none;
     position: absolute;
     background-color: #12682D;
     border-radius: 5px;
-    padding: 8px;
+    padding: 15px; /* Increased padding to make the menu larger */
     color: white;
     z-index: 1000;
   }
@@ -77,6 +70,7 @@
   #customMenu a {
     display: block;
     padding: 8px;
+    font-size: 16px; /* Adjust font size as needed */
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -103,11 +97,9 @@
 		<br>🎮 I create awesome plugins to enhance the Minecraft experience.
 		<br>💡 Let's turn ideas into reality! ✨
     </p>
-    <div class="rounded-rectangle">
-        <p class="emojis">
-            <a href="mailto:Ismo404notfound@gmail.com">📧 Gmail</a> | <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
-        </p>
-    </div>
+    <p class="emojis">
+        <a href="mailto:Ismo404notfound@gmail.com">📧 Gmail</a> | <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
+    </p>
     <div id="customMenu">
         <a id="githubOption" href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
         <a id="contactOption" href="mailto:Ismo404notfound@gmail.com">Contact Me</a>

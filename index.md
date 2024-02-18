@@ -60,6 +60,7 @@
   .rounded-rectangle {
     background-color: black;
     padding: 20px;
+	font-size: 20px;
     border-radius: 15px;
     margin-top: 10px;
   }

@@ -60,8 +60,8 @@
   .rounded-rectangle {
     background-color: black;
     padding: 10px;
-    border-radius: 15px;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-top: 6px;
   }
 
   #customMenu {

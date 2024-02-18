@@ -140,6 +140,11 @@ document.addEventListener('DOMContentLoaded', function() {
       customMenu.style.display = 'none';
     }
   });
+
+  // Prompt the user when trying to leave the page (e.g., open dev tools)
+  window.addEventListener('beforeunload', function(event) {
+    event.returnValue = "Are you sure you want to leave?";
+  });
 });
 </script>
 

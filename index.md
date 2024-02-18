@@ -67,7 +67,7 @@
     <span>press click to remove oxygen</span>
   </div>
   <div id="social">
-    <a href="https://github.com/kevoj" target="_blank"> | Github | </a>
+    <a href="https://github.com/ismo404" target="_blank"> | Github | </a>
   </div>
 
   <script src="https://threejs.org/build/three.js"></script>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -89,6 +90,37 @@
     background-color: #1FB53D;
   }
 </style>
+
+<!-- Script for right-click custom menu -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const customMenu = document.getElementById('customMenu');
+  
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the default browser context menu
+    
+    // Position the custom menu at the cursor's position
+    customMenu.style.left = event.clientX + 'px';
+    customMenu.style.top = event.clientY + 'px';
+
+    // Show the custom menu
+    customMenu.style.display = 'block';
+  });
+
+  document.addEventListener('click', function(event) {
+    // Check if the click was not a right-click
+    if (event.button !== 2) {
+      // Hide the custom menu when clicking outside of it
+      customMenu.style.display = 'none';
+    }
+  });
+
+  // Prompt the user when trying to leave the page (e.g., open dev tools)
+  window.addEventListener('beforeunload', function(event) {
+    event.returnValue = "Are you sure you want to leave?";
+  });
+});
+</script>
 
 <!-- Script for Ctrl + Shift + I popup -->
 <script>

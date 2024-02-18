@@ -34,6 +34,7 @@
     width: 350px;
     height: 100vh;
     box-sizing: border-box;
+    position: relative; /* Added position:relative to handle the absolute position of the custom menu */
   }
 
   .textbox p {
@@ -62,9 +63,32 @@
     border-radius: 15px;
     margin-top: 10px;
   }
+
+  #customMenu {
+    display: none;
+    position: absolute;
+    background-color: #12682D;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    z-index: 1000;
+  }
+
+  #customMenu a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #customMenu a:hover {
+    background-color: #1FB53D;
+  }
 </style>
 </head>
 <body>
+
 <div class="title-container">
   <h1 class="title">Ismo404</h1>
 </div>
@@ -79,13 +103,55 @@
 		<br>🎮 I create awesome plugins to enhance the Minecraft experience.
 		<br>💡 Let's turn ideas into reality! ✨
     </p>
-    <div class="emojis">
-        <div class="rounded-rectangle">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ismo404notfound@gmail.com" target="_blank">📧 Gmail</a> | 
-            <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | 
-            <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
+    <p class="emojis">
+        <a href="mailto:Ismo404notfound@gmail.com">📧 Gmail</a> | <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
+    </p>
+    <div class="rounded-rectangle">
+        <div id="customMenu">
+            <a id="githubOption" href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
+            <a id="contactOption" href="mailto:Ismo404notfound@gmail.com">Contact Me</a>
+            <a id="spigotOption" href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const customMenu = document.getElementById('customMenu');
+  
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the default browser context menu
+    
+    // Position the custom menu at the cursor's position
+    customMenu.style.left = event.clientX + 'px';
+    customMenu.style.top = event.clientY + 'px';
+
+    // Show the custom menu
+    customMenu.style.display = 'block';
+  });
+
+  document.addEventListener('click', function() {
+    // Hide the custom menu when clicking outside of it
+    customMenu.style.display = 'none';
+  });
+
+  // Add click handlers for each menu option
+  document.getElementById('githubOption').addEventListener('click', function() {
+    window.location.href = 'https://github.com/Ismo404';
+    customMenu.style.display = 'none';
+  });
+
+  document.getElementById('contactOption').addEventListener('click', function() {
+    window.location.href = 'mailto:Ismo404notfound@gmail.com';
+    customMenu.style.display = 'none';
+  });
+
+  document.getElementById('spigotOption').addEventListener('click', function() {
+    window.location.href = 'https://www.spigotmc.org/members/ismo404.1969157/';
+    customMenu.style.display = 'none';
+  });
+});
+</script>
+
 </body>
 </html>

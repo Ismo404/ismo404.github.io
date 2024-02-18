@@ -118,33 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('beforeunload', function(event) {
     event.returnValue = "Are you sure you want to leave?";
   });
+
+  // Prevent default behavior when Ctrl key is pressed or F12 is pressed
+  document.addEventListener("keydown", function (event){
+    if (event.ctrlKey || event.keyCode === 123){
+       event.preventDefault();
+    }
+  });
 });
-</script>
-
-<!-- Script for Ctrl + Shift + I popup -->
-<script>
-  document.addEventListener('keydown', function (event) {
-    // Check if the key combination is Ctrl + Shift + I
-    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-      // Show your custom popup or perform any other action
-      alert('What are you trying to do?');
-      // Prevent the default browser behavior for Ctrl + Shift + I (opens browser dev tools)
-      event.preventDefault();
-    }
-  });
-</script>
-
-<!-- Script for Ctrl + U popup -->
-<script>
-  document.addEventListener('keydown', function (event) {
-    // Check if the key combination is Ctrl + U
-    if (event.ctrlKey && event.key === 'U') {
-      // Show your custom popup or perform any other action
-      alert('What are you trying to do?');
-      // Prevent the default browser behavior for Ctrl + U (opens page source)
-      event.preventDefault();
-    }
-  });
 </script>
 
 </head>

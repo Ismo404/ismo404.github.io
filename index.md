@@ -59,7 +59,7 @@
   /* Styling for rounded rectangle */
   .rounded-rectangle {
     background-color: black;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     margin-top: 5px;
   }

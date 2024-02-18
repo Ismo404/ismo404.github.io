@@ -70,7 +70,7 @@
     background-color: #12682D;
     border-radius: 5px;
     padding: 20px;
-	lenght: 50px
+	lenght: 50px;
 	font-size: 20px;
     color: white;
     z-index: 1000;

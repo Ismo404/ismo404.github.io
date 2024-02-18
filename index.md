@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -130,6 +129,19 @@ document.addEventListener('DOMContentLoaded', function() {
       // Show your custom popup or perform any other action
       alert('What are you trying to do?');
       // Prevent the default browser behavior for Ctrl + Shift + I (opens browser dev tools)
+      event.preventDefault();
+    }
+  });
+</script>
+
+<!-- Script for Ctrl + U popup -->
+<script>
+  document.addEventListener('keydown', function (event) {
+    // Check if the key combination is Ctrl + U
+    if (event.ctrlKey && event.key === 'U') {
+      // Show your custom popup or perform any other action
+      alert('What are you trying to do?');
+      // Prevent the default browser behavior for Ctrl + U (opens page source)
       event.preventDefault();
     }
   });

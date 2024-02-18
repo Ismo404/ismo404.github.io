@@ -89,20 +89,6 @@
     background-color: #1FB53D;
   }
 </style>
-
-<!-- Script for Ctrl + Shift + I popup -->
-<script>
-  document.addEventListener('keydown', function (event) {
-    // Check if the key combination is Ctrl + Shift + I
-    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-      // Show your custom popup or perform any other action
-      alert('What are you trying to do?');
-      // Prevent the default browser behavior for Ctrl + Shift + I (opens browser dev tools)
-      event.preventDefault();
-    }
-  });
-</script>
-
 </head>
 <body>
 
@@ -131,6 +117,31 @@
         <a id="spigotOption" href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const customMenu = document.getElementById('customMenu');
+  
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the default browser context menu
+    
+    // Position the custom menu at the cursor's position
+    customMenu.style.left = event.clientX + 'px';
+    customMenu.style.top = event.clientY + 'px';
+
+    // Show the custom menu
+    customMenu.style.display = 'block';
+  });
+
+  document.addEventListener('click', function(event) {
+    // Check if the click was not a right-click
+    if (event.button !== 2) {
+      // Hide the custom menu when clicking outside of it
+      customMenu.style.display = 'none';
+    }
+  });
+});
+</script>
 
 </body>
 </html>

@@ -1,66 +1,78 @@
-<div id="minecraft" ></div>
-<div id="instruccions">
-  <h1>PIG MINECRAFT</h1>
- <span>press click to remove oxygen
-</span>
-</div>
-<div id="social">
-  <a href="https://github.com/ismo404" target="_blank"> | Github | </a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pig Minecraft</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none;   /* Chrome/Safari/Opera */
+      -khtml-user-select: none;    /* Konqueror */
+      -moz-user-select: none;      /* Firefox */
+      -ms-user-select: none;       /* IE/Edge */
+      user-select: none;  
+    }
 
+    #minecraft {
+      background-image: -webkit-radial-gradient(#54e2d5, #027cb3);
+      background-image: radial-gradient(#54e2d5, #027cb3);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
 
- body {
-   margin: 0;
-   padding: 0;
-   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* IE/Edge */
-    user-select: none;  
- }
-  #minecraft {
-   background-image: -webkit-radial-gradient(#54e2d5, #027cb3);
-   background-image: radial-gradient(#54e2d5, #027cb3);
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
- }
-#minecraft.noBreathe{
-   background-image: -webkit-radial-gradient(#121a48, #3F51B5);
-   background-image: radial-gradient(#121a48, #3F51B5);
-}
-#social,#instruccions{
-  position:fixed;
-  bottom:20px;
-  width:100%;
-  text-align:center;
-  color:white;
-  font-family:monospace;
-  font-size:15px;
-}
+    #minecraft.noBreathe {
+      background-image: -webkit-radial-gradient(#121a48, #3F51B5);
+      background-image: radial-gradient(#121a48, #3F51B5);
+    }
 
-#instruccions{
-  top:20px;
-}
-#instruccions span{
-  color:orange;
-   font-weight:bold;
-}
-#instruccions h1{
-  margin-bottom:2px;
-}
+    #social, #instruccions {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: monospace;
+      font-size: 15px;
+    }
 
-a{
-   text-decoration: none;
-   font-weight:bold;
-   color:white;
-}
+    #instruccions {
+      top: 20px;
+    }
 
+    #instruccions span {
+      color: orange;
+      font-weight: bold;
+    }
 
+    #instruccions h1 {
+      margin-bottom: 2px;
+    }
 
-var camera, scene, renderer;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="minecraft"></div>
+  <div id="instruccions">
+    <h1>PIG MINECRAFT</h1>
+    <span>press click to remove oxygen</span>
+  </div>
+  <div id="social">
+    <a href="https://github.com/kevoj" target="_blank"> | Github | </a>
+  </div>
+
+  <script src="https://threejs.org/build/three.js"></script>
+  <script>
+    var camera, scene, renderer;
 var world, pig;
 var hemiLight,dirLight,backLight,isUp,frrrr;
 
@@ -429,3 +441,7 @@ init();
 addLights();
 createPig();
 loop();
+
+  </script>
+</body>
+</html>

@@ -50,3 +50,21 @@ body, #minecraft {
     margin: 0;
     padding: 0;
 }
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Add this line to hide any potential scrollbar */
+}
+
+#minecraft {
+    background-image: -webkit-radial-gradient(#54e2d5, #027cb3);
+    background-image: radial-gradient(#54e2d5, #027cb3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#minecraft.noBreathe {
+    background-image: -webkit-radial-gradient(#121a48, #3F51B5);
+    background-image: radial-gradient(#121a48, #3F51B5);
+}

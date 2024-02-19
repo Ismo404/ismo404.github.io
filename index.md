@@ -7,7 +7,6 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="minecraft" style="height: 100vh;"></div>
 <div id="minecraft" ></div>
 <div id="instruccions">
   <h1>Ismo404</h1>

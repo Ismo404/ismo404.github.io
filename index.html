@@ -42,16 +42,20 @@
     #leftText {
       position: absolute;
       left: 20px;
-      top: 50px;
-      color: black; /* Change to a visible color */
+      top: 0;
+      bottom: 0;
+      background-color: #0388fc; /* Minimal blue background */
+      color: white; /* Change to a visible color */
       font-size: 20px;
       font-family: 'Press Start 2P', cursive; /* Apply Press Start 2P font to the left text */
       z-index: 1001; /* Set a lower z-index than custom menu */
+      padding: 20px; /* Add padding for better readability */
+      line-height: 1.5; /* Increase the line height */
     }
 
     #portfolio {
       position: absolute;
-      left: 20px;
+      left: 300px; /* Adjust the left position based on the width of the text column */
       top: 120px;
       color: black; /* Change to a visible color */
       font-size: 16px;
@@ -61,6 +65,7 @@
       word-wrap: break-word; /* Break words if they exceed the container width */
     }
   </style>
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/minecraft-4">
 </head>
 <body>
 

@@ -18,6 +18,16 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js'></script>
 <script src="./script.js"></script>
-
+<script>
+  document.addEventListener('keydown', function (event) {
+    // Check if the key combination is Ctrl + U
+    if (event.ctrlKey && event.code === 'KeyU') {
+      // Show your custom popup or perform any other action
+      alert('What are you trying to do?');
+      // Prevent the default browser behavior for Ctrl + U (opens page source)
+      event.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>

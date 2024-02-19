@@ -4,6 +4,31 @@
   <meta charset="UTF-8">
   <title>Ismo404</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Styling for the custom right-click menu */
+    #customMenu {
+      display: none;
+      position: absolute;
+      background-color: #12682D;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 16px;
+      color: white;
+      z-index: 1000;
+    }
+
+    #customMenu a {
+      display: block;
+      padding: 8px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #customMenu a:hover {
+      background-color: #1FB53D;
+    }
+  </style>
 </head>
 <body>
 
@@ -16,6 +41,13 @@
   <a href="https://github.com/Ismo404" target="_blank">| Github |</a> <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">| Spigot |</a> <a href="https://discordapp.com/users/825988251788902402" target="_blank">| Discord |</a>
 </div>
 
+<!-- Custom right-click menu -->
+<div id="customMenu">
+  <a href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
+  <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
+  <a href="https://discordapp.com/users/825988251788902402" target="_blank">Join Discord</a>
+</div>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js'></script>
 <script>
   document.addEventListener("keydown", function (event) {
@@ -26,6 +58,27 @@
     // Disable F12
     if (event.key === 'F12') {
       event.preventDefault();
+    }
+  });
+
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the default browser context menu
+
+    // Position the custom menu at the cursor's position
+    const customMenu = document.getElementById('customMenu');
+    customMenu.style.left = event.clientX + 'px';
+    customMenu.style.top = event.clientY + 'px';
+
+    // Show the custom menu
+    customMenu.style.display = 'block';
+  });
+
+  document.addEventListener('click', function(event) {
+    // Check if the click was not a right-click
+    if (event.button !== 2) {
+      // Hide the custom menu when clicking outside of it
+      const customMenu = document.getElementById('customMenu');
+      customMenu.style.display = 'none';
     }
   });
 </script>

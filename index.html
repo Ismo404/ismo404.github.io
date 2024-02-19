@@ -33,11 +33,6 @@
       background-color: #004a8a;
     }
 
-    /* Styling for the title with the Minecraft font */
-    #instruccions h1 {
-      font-family: 'Minecraft', sans-serif; /* Apply Minecraft font to the title */
-    }
-
     /* Styling for the left text and portfolio section */
     #leftText {
       position: absolute;
@@ -55,6 +50,16 @@
       color: white;
       font-size: 16px;
       font-family: Arial, sans-serif; /* Apply a different font for the portfolio section */
+    }
+
+    /* New class for the Minecraft font */
+    .minecrafth1 {
+      font-family: 'Minecraft', sans-serif; /* Apply Minecraft font to the title */
+      font-size: 40px; /* Adjust the font size as needed */
+    }
+
+    #instruccions h1 {
+      margin-bottom: 2px;
     }
   </style>
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/minecraft-4">
@@ -76,11 +81,13 @@
 
 <div id="minecraft"></div>
 <div id="instruccions">
-  <h1>Ismo404</h1>
+  <h1 class="minecrafth1">Ismo404</h1>
   <span>Press click to remove oxygen</span>
 </div>
 <div id="social">
-  <a href="https://github.com/Ismo404" target="_blank">| Github |</a> <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">| Spigot |</a> <a href="https://discord.gg/kQZF6c84Wz" target="_blank">| Discord |</a>
+  <a href="https://github.com/Ismo404" target="_blank">| Github |</a>
+  <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">| Spigot |</a>
+  <a href="https://discord.gg/kQZF6c84Wz" target="_blank">| Discord |</a>
 </div>
 
 <!-- Custom right-click menu -->
@@ -123,7 +130,6 @@
       customMenu.style.display = 'none';
     }
   });
-  
 </script>
 <script src="./script.js"></script>
 

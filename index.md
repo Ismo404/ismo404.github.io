@@ -1,161 +1,24 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ismo404 - Minecraft Developer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #1FB53D;
-    font-family: Arial, sans-serif;
-  }
-  .title-container {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 20px;
-    z-index: 10;
-  }
-  .title {
-    font-size: 2.5em;
-    color: black;
-    font-family: 'Press Start 2P', cursive;
-  }
-  .textbox {
-    font-family: "VT323", monospace;
-    background-color: #12682D;
-    padding: 20px;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-    width: 350px;
-    height: 100vh;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .textbox p {
-    font-size: 30px;
-  }
-
-  .textbox .emojis {
-    font-size: 20px;
-  }
-
-  /* Styling for links */
-  .emojis a {
-    color: #1FB53D;
-    text-decoration: none;
-  }
-
-  .emojis a:hover,
-  .emojis a:active {
-    color: #1FB53D;
-  }
-
-  /* Styling for rounded rectangle */
-  .rounded-rectangle {
-    background-color: black;
-    padding: 2px;
-    border-radius: 10px;
-    margin-top: 5px;
-  }
-
-  #customMenu {
-    display: none;
-    position: absolute;
-    background-color: #12682D;
-    border-radius: 5px;
-    padding: 20px;
-    length: 100px;
-    font-size: 20px;
-    color: white;
-    z-index: 1000;
-  }
-
-  #customMenu a {
-    display: block;
-    padding: 8px;
-    length: 100px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  #customMenu a:hover {
-    background-color: #1FB53D;
-  }
-</style>
-
-<!-- Script for right-click custom menu -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const customMenu = document.getElementById('customMenu');
-  
-  document.addEventListener('contextmenu', function(event) {
-    event.preventDefault(); // Prevent the default browser context menu
-    
-    // Position the custom menu at the cursor's position
-    customMenu.style.left = event.clientX + 'px';
-    customMenu.style.top = event.clientY + 'px';
-
-    // Show the custom menu
-    customMenu.style.display = 'block';
-  });
-
-  document.addEventListener('click', function(event) {
-    // Check if the click was not a right-click
-    if (event.button !== 2) {
-      // Hide the custom menu when clicking outside of it
-      customMenu.style.display = 'none';
-    }
-  });
-
-  // Prompt the user when trying to leave the page (e.g., open dev tools)
-  window.addEventListener('beforeunload', function(event) {
-    event.returnValue = "Are you sure you want to leave?";
-  });
-
-  // Prevent default behavior when Ctrl key is pressed or F12 is pressed
-  document.addEventListener("keydown", function (event){
-    if (event.ctrlKey || event.keyCode === 123){
-       event.preventDefault();
-    }
-  });
-});
-</script>
+  <meta charset="UTF-8">
+  <title>Ismo404</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-
-<div class="title-container">
-  <h1 class="title">Ismo404</h1>
+<!-- partial:index.partial.html -->
+<div id="minecraft" ></div>
+<div id="instruccions">
+  <h1>Ismo404</h1>
+ <span>press click to remove oxygen
+</span>
 </div>
-<div class="textbox">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  
-    <h1>🚀 Professional Minecraft Developer</h1>
-    <p>
-        Hey there! I'm Ismo404, a passionate Minecraft Java plugin developer.
-		<br>🎮 I create awesome plugins to enhance the Minecraft experience.
-		<br>💡 Let's turn ideas into reality! ✨
-    </p>
-    <div class="rounded-rectangle">
-        <p class="emojis">
-            <a href="mailto:Ismo404notfound@gmail.com">📧 Gmail</a> | <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">🛠️ Spigot</a> | <a href="https://github.com/Ismo404" target="_blank">🐱‍👤 Github</a>
-        </p>
-    </div>
-    <div id="customMenu">
-        <a id="githubOption" href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
-        <a id="contactOption" href="mailto:Ismo404notfound@gmail.com">Contact Me</a>
-        <a id="spigotOption" href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
-    </div>
+<div id="social">
+  <a href="https://github.com/ismo404" target="_blank"> | Github | </a>
 </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>

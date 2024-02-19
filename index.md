@@ -10,7 +10,6 @@
 <!-- partial:index.partial.html -->
 <div id="minecraft" ></div>
 <div id="instruccions">
-  <h1>Ismo404</h1>
  <span>press click to remove oxygen
 </span>
 </div>

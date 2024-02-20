@@ -75,9 +75,10 @@
 
     /* Styling for the social category */
     #social {
-      position: absolute;
-      left: 0; /* Align with the left side of the screen */
-      top: 200px;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
       color: white; /* Change to a visible color */
       font-size: 16px;
       font-family: 'Press Start 2P'; /* Apply Press Start 2P font to the social category */
@@ -102,19 +103,19 @@
   <span>Press click to remove oxygen</span>
 </div>
 
+<!-- Custom right-click menu -->
+<div id="customMenu">
+  <a href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
+  <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
+  <a href="https://discord.gg/kQZF6c84Wz" target="_blank">Join Discord</a>
+</div>
+
 <!-- Social category -->
 <div id="social">
   <p>Social Links:</p>
   <a href="https://github.com/Ismo404" target="_blank">GitHub</a><br>
   <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Spigot</a><br>
   <a href="https://discord.gg/kQZF6c84Wz" target="_blank">Discord</a>
-</div>
-
-<!-- Custom right-click menu -->
-<div id="customMenu">
-  <a href="https://github.com/Ismo404" target="_blank">Go to GitHub</a>
-  <a href="https://www.spigotmc.org/members/ismo404.1969157/" target="_blank">Visit Spigot</a>
-  <a href="https://discord.gg/kQZF6c84Wz" target="_blank">Join Discord</a>
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js'></script>
